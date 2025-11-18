@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>Music Survey</h1>
+        <p>Tell us about your music preferences!</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="5" max="100" required><br><br>
+
+            
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="">--Select--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not">Prefer not to say</option>
+            </select><br><br>
+
+            
+            <label for="genre">Favorite Music Genre:</label><br>
+            <select id="genre" name="genre" required>
+                <option value="">--Select--</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="hiphop">Hip-Hop / Rap</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Classical</option>
+                <option value="kpop">K-Pop</option>
+                <option value="edm">EDM</option>
+                <option value="rnb">R&B</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            
+            <label>Favorite Artists (choose all that apply):</label><br>
+            <input type="checkbox" id="artist1" name="artists" value="Maki">
+            <label for="artist1">Maki</label><br>
+            <input type="checkbox" id="artist2" name="artists" value="Adie">
+            <label for="artist2">Adie</label><br>
+            <input type="checkbox" id="artist3" name="artists" value="Cup of Joe">
+            <label for="artist3">Cup of Joe</label><br>
+            <input type="checkbox" id="artist4" name="artists" value="SB19">
+            <label for="artist4">SB19</label><br>
+            <input type="checkbox" id="artist5" name="artists" value="Dionela">
+            <label for="artist5">Dionela</label><br>
+            <input type="checkbox" id="artist6" name="artists" value="Other">
+            <label for="artist6">Other</label><br><br>
+
+           
+            <label>How often do you listen to music?</label><br>
+            <input type="radio" id="freq1" name="frequency" value="daily" required>
+            <label for="freq1">Daily</label>
+            <input type="radio" id="freq2" name="frequency" value="few_times_week">
+            <label for="freq2">A few times a week</label>
+            <input type="radio" id="freq3" name="frequency" value="occasionally">
+            <label for="freq3">Occasionally</label>
+            <input type="radio" id="freq4" name="frequency" value="rarely">
+            <label for="freq4">Rarely</label><br><br>
+
+            
+            <label for="song1">Top 3 Favorite Songs:</label><br>
+            <input type="text" id="song1" name="song1" placeholder="Song 1" required><br>
+            <input type="text" id="song2" name="song2" placeholder="Song 2"><br>
+            <input type="text" id="song3" name="song3" placeholder="Song 3"><br><br>
+
+            
+            <label for="platform">Most used platform to listen to music:</label><br>
+            <select id="platform" name="platform" required>
+                <option value="">--Select--</option>
+                <option value="spotify">Spotify</option>
+                <option value="apple_music">Apple Music</option>
+                <option value="youtube">YouTube</option>
+                <option value="soundcloud">SoundCloud</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            
+            <label>Do you attend music concerts or events?</label><br>
+            <input type="radio" id="concert_yes" name="concert" value="yes" required>
+            <label for="concert_yes">Yes</label>
+            <input type="radio" id="concert_no" name="concert" value="no">
+            <label for="concert_no">No</label><br><br>
+
+            
+            <label for="comments">Additional Comments / Suggestions:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br><br>
+
+           
+            <input type="submit" value="Submit Survey">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Music Survey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
