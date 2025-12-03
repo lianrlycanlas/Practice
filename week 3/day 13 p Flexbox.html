@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d6336c;
+            margin-top: 30px;
+        }
+
+       
+        .todo-container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffe6f0;
+            border-radius: 20px;
+            border: 2px solid #ffb6c1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        
+        .input-section {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .input-section input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ffb6c1;
+            outline: none;
+        }
+
+        .input-section button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .input-section button:hover {
+            background-color: #d6336c;
+        }
+
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #ffd6e8;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li span {
+            font-size: 0.95em;
+        }
+
+        li button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        li button:hover {
+            background-color: #d6336c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+
+    <div class="todo-container">
+       
+        <div class="input-section">
+            <input type="text" placeholder="Add new task">
+            <button>Add</button>
+        </div>
+
+      
+        <ul>
+            <li>
+                <span>Finish research paper</span>
+                <button>Done</button>
+            </li>
+            <li>
+                <span>Clean the house</span>
+                <button>Done</button>
+            </li>
+            <li>
+                <span>Feed the dog</span>
+                <button>Done</button>
+            </li>
+            <li>
+                <span>Water the flowers</span>
+                <button>Done</button>
+            </li>
+            <li>
+                <span>Prepare food for Lunch</span>
+                <button>Done</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
