@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Pricing Table</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            color: #00796b; 
+        }
+
+        
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 50px auto;
+        }
+
+    
+        .card {
+            width: 250px;
+            background-color: #b2ebf2; 
+            border-radius: 20px;
+            padding: 20px;
+            border: 2px solid #4dd0e1; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #006064; 
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            text-align: left;
+            margin-bottom: 15px;
+            color: #004d40;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #004d40;
+        }
+
+        
+        .popular {
+            background-color: #80deea;
+            border: 2px solid #00acc1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Li's Pricing Plans</h1>
+
+    <div class="pricing-container">
+        <div class="card">
+            <h2>Basic</h2>
+            <div class="price">$9.99/mo</div>
+            <ul class="features">
+                <li>1 User</li>
+                <li>5 Projects</li>
+                <li>Email Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+
+        <div class="card popular">
+            <h2>Standard</h2>
+            <div class="price">$19.99/mo</div>
+            <ul class="features">
+                <li>5 Users</li>
+                <li>20 Projects</li>
+                <li>Priority Email Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+
+        <div class="card">
+            <h2>Premium</h2>
+            <div class="price">$29.99/mo</div>
+            <ul class="features">
+                <li>Unlimited Users</li>
+                <li>Unlimited Projects</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+    </div>
+
+</body>
+</html>
